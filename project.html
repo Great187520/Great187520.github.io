@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Python Developer</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+ 	<link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body>
+
+<div class="container">
+
+	<div class="card">
+		<img src="1.jpg" alt="">
+		<h3> Eleke Great</h3>
+		<span class="post"> Senior Python Developer</span>
+		<div class="icons">
+			<a href="https://www.facebook.com/akindollar.chima" class="fab fa-facebook-f"></a>
+			<a href="https://www.twitter.com" class="fab fa-twitter"></a>
+			<a href="https://www.instagram.com/fadagreat_001" class="fab fa-instagram"></a>
+			<a href="https://www.linkedin.com/in/eleke-great-668a9O2O7" class="fab fa-linkedin"></a>
+			<a href="https://www.github.com/great187520" class="fab fa-github"></a>
+			
+		</div>
+		<a href="#"><button>follow</button></a>
+		<a href="#"><button>Message</button></a>
+		<div class="shares">
+			<a href="#" class="counter"><i class="fas fa-heart"></i><span class="count">1000</span></a>
+			<a href="#" class="counter"><i class="fas fa-share"></i><span class="count">1500</span></a>
+			<a href="#" class="counter"><i class="fas fa-comment"></i><span class="count">850</span></a>
+		</div>
+	</div>
+</div>
+
+<script scr="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+	$('.count').each(function(){
+		$(this).prop('Counter',0).animate({
+			Counter : $(this).text()
+		},{
+			duration : 3500,
+			easing : 'swing',
+			step : function (now){
+				$(this).text(Math.cell(now) + '+');
+			}
+		});
+	});
+});
+</script>
+</body>
+</html>
